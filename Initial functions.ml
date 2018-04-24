@@ -141,3 +141,13 @@
 	     let aleat= Random.int ((cardinal s)+1) in get aleat s;;
 
 	    getrandom [(1,2);(3,6);(5,3)];;
+
+(* 5.2 *)
+(*1*)
+
+let rec points_suite (c: combinaison) : int =
+	match c with 
+	|[] -> 0 
+	|T(a,b)::fin -> a + points_suite fin ;;
+	
+
